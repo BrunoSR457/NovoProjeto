@@ -1,0 +1,5 @@
+@use 'variantes';
+
+body {
+    background-color: variantes.$cor1;
+}

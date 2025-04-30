@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","C:/Users/bruno/Downloads/pasta%20de%20estudos/atividades/atividade%20gulp/source/styles/variantes.scss"],"names":[],"mappings":"AAEA;EACI,kBCHG","sourcesContent":["@use 'variantes';\r\n\r\nbody {\r\n    background-color: variantes.$cor1;\r\n}","$cor1: rgb(1, 116, 112);"],"file":"../main.css"}
