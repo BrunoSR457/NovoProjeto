@@ -26,10 +26,11 @@ function compilasass() {
         .pipe(gulp.dest('./build/styles'));
 }
 
-exports.sass = compilasass;
-exports.watch = function(){
-    gulp.watch('./source/styles/*.scss', { ignoreInitial: false }, gulp.series(compilasass));
+
+
+exports.default = function() {
+    gulp.watch('./source/styles/*.scss', { ignoreInitial: false}, gulp.series(compilasass));
+    gulp.watch('./source/scripts/*.js', { ignoreInitial: false}, gulp.series(comprimeJS));
+    gulp.watch('./source/images/*', { ignoreInitial: false}, gulp.series(comprimeImagens));
 }
 
-exports.javascript = comprimeJS;
-exports.images = comprimeImagens;
